@@ -1,0 +1,28 @@
+.inline li{
+    display: inline;
+}
+
+#main{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#main1{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.simple{
+    width: 500px;
+    margin: 20px auto;
+    background: aqua;
+}
+
+.fancy{
+    width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+    border: solid blue 10px;
+    background: aqua;
+
+}
