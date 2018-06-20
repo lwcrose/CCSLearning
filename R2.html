@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <!--display:block-->
-    
+
     <div id="main1">This is another div.</div>
     <p class="simple">This is p(simple).</p>
     <p class="fancy">This is another p(fancy).</p>
+    <!--position:atatic相对于它自己static位置来定位, 默认值-->
+    <div class="static">Position=Static(default).</div>
+    <!--position:relative相对于它自己static位置来定位, 会剩下的空隙-->
+    <div class="relative1">Position=relative1.</div>
+    <div class="relative2">Position=relative2.</div>
+    <!--position:fixed相对于视窗来定位-->
+    <div class="fixed">Position=fixed.</div>
+
+    <div class="relative">This is relative.
+        <!--position:absolute相对于最近的"positioned"祖先元素, 不会剩下空隙-->
+        <!--记住一个“positioned”元素是指 position 值不是 static 的元素。-->
+        <div class="absolute">This is absolutely.</div>
+    </div>
+
+
     <form action="">This is form.</form>
     <header>This is header.</header>
     <footer>This is footer.</footer>
     <section>This is section.</section>
     <!--Ordered-->
     <ol class="inline">
-            <li>Rose</li>
-            <li>Jack</li>
-            <li>Lex</li>
+        <li>Rose</li>
+        <li>Jack</li>
+        <li>Lex</li>
     </ol>
     <!--No order-->
     <ul>
@@ -35,7 +52,8 @@
 
     <!--display:none-->
 
-    
+
 </body>
 <link rel="stylesheet" href="R2.css">
+
 </html>
