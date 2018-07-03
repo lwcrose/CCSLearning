@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ImgExample</title>
+</head>
+
+<body>
+    <div class="content ">
+        <img src="http://zh.learnlayout.com/images/ilta.png" alt="hehe">
+        <p class="padding">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas
+            odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae
+            massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+            Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+            ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus
+            gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras
+            ac leo purus. Mauris quis diam velit.
+        </p>
+    </div>
+    <div class="clear1 ">
+        <div class="box bordersolid padding">我感觉我好像在漂~~~浮~~~
+            <p class="lefttop">&lt;div class="box"&gt;</p>
+            <p class="rightbottom">&lt;/div&gt;</p>
+        </div>
+        <section class="bordersolid padding">在这个例子中，
+            <code>section</code> 元素实际上是在
+            <code>div</code> 之后的（译注：DOM结构上）。然而
+            <code>div</code> 元素是浮动到左边的，于是
+            <code>section</code> 中的文字就围绕了
+            <code>div</code> ，并且
+            <code>section</code> 元素包围了整个元素。如果我们想让
+            <code>section</code> 显示在浮动元素之后呢？
+            <p class="lefttop">&lt;section&gt;</p>
+            <p class="rightbottom">&lt;/section&gt;</p>
+        </section>
+    </div>
+    <div class="clear2 ">
+        <div class="box bordersolid padding">我感觉我好像在漂~~~浮~~~
+            <p class="lefttop">&lt;div class="box"&gt;</p>
+            <p class="rightbottom">&lt;/div&gt;</p>
+        </div>
+        <section class="bordersolid after-box padding">使用
+            <code>clear</code> 我们就可以将这个段落移动到浮动元素
+            <code>div</code> 下面。你需要用
+            <code>left</code> 值才能清除元素的向左浮动。你还可以用
+            <code>right</code> 或
+            <code>both</code> 来清除向右浮动或同时清除向左向右浮动。
+            <p class="lefttop">&lt;section class="after-box" - clear:left;&gt;</p>
+            <p class="rightbottom">&lt;/section&gt;</p>
+        </section>
+    </div>
+    <div class="content bordersolid floatover">
+        <img class="float" src="http://zh.learnlayout.com/images/ilta.png" alt="hehe">
+        <p class="padding">
+            不......这个图片比包含它的元素还高， 而且它是浮动的，于是它就溢出到了容器外面！
+        </p>
+        <p class="lefttop">&lt;"div - float: right;"&gt;</p>
+    </div>
+    <div class="content bordersolid clearfix">
+        <img class="float" src="http://zh.learnlayout.com/images/ilta.png" alt="hehe">
+        <p class="padding">
+            好多了！
+        </p>
+        <p class="lefttop">&lt;div class="clearfix" - overflow: auto;&gt;</p>
+    </div>
+    <!--用 float 来实现页面布局-->
+    <div class="container bordersolid1">
+        <p class="lefttop">&lt;class="container"&gt;</p>
+        <p class="rightbottom">&lt;class="container"&gt;</p>
+        <nav class="bordersolid1">
+            <p class="lefttop">&lt;nav&gt;</p>
+            <p class="rightbottom">&lt;/nav&gt;</p>
+            <ul>
+                <li>
+                    <a href="positionexample.html">Home</a>
+                </li>
+                <li>
+                    <a href="positionexample.html">Taco Menu</a>
+                </li>
+                <li>
+                    <a href="positionexample.html">Draft List</a>
+                </li>
+                <li>
+                    <a href="positionexample.html">Hours</a>
+                </li>
+                <li>
+                    <a href="positionexample.html">Directions</a>
+                </li>
+                <li>
+                    <a href="positionexample.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="section200">
+            <div class="section bordersolid1 sectioneach padding">
+                    这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。原本在这个例子中是不需要的，但是当
+                <code>nav</code>  比非浮动的内容还要高时就需要了。
+                <p class="lefttop">&lt;section&gt;</p>
+                <p class="rightbottom">&lt;/section&gt;</p>
+            </div>
+            <div class="section bordersolid1 sectioneach grayback padding">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas
+                odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+                vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis
+                in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
+                ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae
+                dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
+                tempor porta. Cras ac leo purus. Mauris quis diam velit.
+                <p class="lefttop">&lt;section&gt;</p>
+                <p class="rightbottom">&lt;/section&gt;</p>
+            </div>
+        </section>
+    </div>
+</body>
+<link rel="stylesheet" href="ImgExample.css">
+
+</html>

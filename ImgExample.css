@@ -1,0 +1,159 @@
+.content {
+    width: 600px;
+    margin: auto;
+    color: #734161;
+    background-color: #eee;
+}
+
+img {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #414142;
+    font-family: Arial;
+}
+
+.bordersolid{
+    border: 3px solid rgb(255, 1, 56);
+}
+.bordersolid1{
+    border: 1px solid #6AC5AC;
+}
+.padding{
+    padding: 20px 10px;
+}
+.box {
+    float: left;
+    width: 160px;
+    height: 80px;
+    border-color:  #FDC72F;
+    position: relative;
+}
+
+section.bordersolid {
+    position: relative;
+    border-color:  #6AC5AC;
+}
+
+.clear1 {
+   margin: 50px auto;
+}
+
+.clear2 {
+    margin: 100px auto;
+}
+p.lefttop {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+p.rightbottom {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+div.box>p {
+    position: absolute;
+    background-color: #FDC72F;
+    border-color: #FDC72F;
+    margin: 0px;
+  }
+section>p {
+    position: absolute;
+    background-color: #6AC5AC;
+    border-color: #6AC5AC;
+    margin: 0;
+  }
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .after-box {
+      /*清除元素的向左浮动*/
+    clear: left;
+  }
+  code {
+    font-family: monospace;
+    background-color: #ECECEC;
+  }
+  .floatover{
+      position: relative;
+      border-color: #6AC5AC;
+  }
+  .clearfix {
+    margin: 250px auto 0 auto;
+    /*清除浮动*/
+    overflow: auto;
+    position: relative;
+    border-color: #6AC5AC;
+  }
+  div.floatover>p.lefttop {
+    position: absolute;
+    background-color: #6AC5AC;
+    border-color: #6AC5AC;
+    margin: 0px;
+  }
+  div.clearfix>p.lefttop {
+    position: absolute;
+    background-color: #6AC5AC;
+    border-color: #6AC5AC;
+    margin: 0px;
+  }
+
+  .container{
+      position: relative;
+      margin: 10px;   
+      /*清除浮动*/
+      overflow: auto;
+      border-width: 3px;
+  }
+  nav.bordersolid1{
+      float: left;
+      border:3px solid #D64078;
+      position: relative;
+      width: 200px;
+  }
+  nav>p {
+    background-color: #D64078;
+    border-color: #D64078;
+    color: white;
+    margin: 0;
+  }
+  a {
+    color: #D64078;
+    text-decoration: none;
+    line-height: 1.5em;
+
+}
+.section200{
+    margin: 0 0 0 200px;
+}
+.section200>div>p {
+    position: absolute;
+    background-color: #FDC72F;
+    border: #FDC72F;
+    margin: 0;
+  }
+  .sectioneach{
+    border:3px solid #FDC72F;
+    position: relative;
+  }
+  .grayback {
+    background-color: #f1efef;
+    color: #734161;
+  }
+  .container>p {
+    color: #414142;
+    line-height: 25px;
+    background-color: #6AC5AC;
+    border-color: #6AC5AC;
+    width: 150px;
+    margin: 0;
+  }
