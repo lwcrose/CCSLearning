@@ -26,7 +26,7 @@
             <p class="lefttop">&lt;div class="box"&gt;</p>
             <p class="rightbottom">&lt;/div&gt;</p>
         </div>
-        <section class="bordersolid padding">在这个例子中，
+        <section class="bordersolid padding">在这个例子中，本
             <code>section</code> 元素实际上是在
             <code>div</code> 之后的（译注：DOM结构上）。然而
             <code>div</code> 元素是浮动到左边的，于是
@@ -97,8 +97,8 @@
         </nav>
         <section class="section200">
             <div class="section bordersolid1 sectioneach padding">
-                    这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。原本在这个例子中是不需要的，但是当
-                <code>nav</code>  比非浮动的内容还要高时就需要了。
+                这个例子和之前那个外观一模一样。请注意我们在容器上做了“清除浮动”。原本在这个例子中是不需要的，但是当
+                <code>nav</code> 比非浮动的内容还要高时就需要了。
                 <p class="lefttop">&lt;section&gt;</p>
                 <p class="rightbottom">&lt;/section&gt;</p>
             </div>
@@ -114,6 +114,17 @@
                 <p class="rightbottom">&lt;/section&gt;</p>
             </div>
         </section>
+    </div>
+    <!--百分比宽度:对图片很有用-->
+    <div class="content overflowauto bordersolid ">
+        <article class="lefttop clearfix2">&lt;article class="clearfixpercent"&gt;</article>
+        <article class="rightbottom clearfix2">&lt;/article&gt;</article>
+        <img class="clearfixpercent" src="http://zh.learnlayout.com/images/ilta.png" alt="heheda~">
+        <p class="padding">
+            你甚至还能同时使用
+            <code>min-width</code> 和
+            <code>max-width</code> 来限制图片的最大或最小宽度！
+        </p>
     </div>
 </body>
 <link rel="stylesheet" href="ImgExample.css">

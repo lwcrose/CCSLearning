@@ -157,3 +157,48 @@ section>p {
     width: 150px;
     margin: 0;
   }
+  .clearfixpercent{
+      float: right;
+      width: 50%;
+      margin: auto;
+      min-width: 60px;
+      
+  }
+  .overflowauto{
+      overflow: auto;
+  }
+  .clearfix2 {
+    margin: auto;
+    /*清除浮动*/
+    overflow: auto;
+    position: relative;
+    border-color: #FDC72F;
+  }
+  div.bordersolid {
+    position: relative;
+    border-color:  #6AC5AC;
+}
+div.content>article.lefttop {
+    position: absolute;
+    background-color: #FDC72F;
+    border-color: #FDC72F;
+    margin: 0px;
+    top: 0px;
+  }
+  div.content>article.rightbottom {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: #FDC72F;
+    border-color: #FDC72F;
+  }
+
+  div.box.bordersolid.padding{
+    border-color: #FDC72F
+  }
+
+  div.content.overflowauto.bordersolid{
+    border-color: #FDC72F;
+    line-height: 1.5em;
+    background-color: white;
+  }
